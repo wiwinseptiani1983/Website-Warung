@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- FIX: viewport – disable user-scalable untuk pengalaman app-like di Android -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description"
+    content="Warung Pempek Memble Mbak Wiwin - Pempek, Model Ikan, Es Campur, Seblak Prasmanan dan minuman segar. Nikmati cita rasa autentik khas Palembang!" />
+  <title>Warung Pempek Memble Mbak Wiwin</title>
+  <!-- Android / PWA meta -->
+  <meta name="theme-color" content="#e63c1e" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Pempek Memble" />
+  <!-- Open Graph (share ke WA, FB, dsb) -->
+  <meta property="og:title" content="Warung Pempek Memble Mbak Wiwin" />
+  <meta property="og:description"
+    content="Pempek autentik × Seblak Prasmanan khas Mbak Wiwin. Pempek · Model Ikan · Es Campur · Seblak." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">
+        🍢 <span>Pempek Memble</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <!-- FIX: overlay backdrop untuk mobile nav -->
+      <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+      <nav class="nav-links" id="navLinks" aria-label="Menu navigasi">
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">Kontak</a>
+        <a href="https://wa.me/6285124958328?text=Halo%20Mbak%20Wiwin%2C%20saya%20mau%20pesan!" class="btn-wa"
+          target="_blank" rel="noopener">
+          📲 WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+    <div class="container hero-content">
+      <span class="badge">🏆 Favorit Warga Sejak 2012</span>
+      <h1>Warung Pempek<br /><em>Memble</em> Mbak Wiwin</h1>
+
+      <!-- Dua Andalan Warung -->
+      <div class="hero-colab">
+        <span class="colab-pill colab-pempek">🍢 Pempek</span>
+        <span class="colab-amp">&amp;</span>
+        <span class="colab-pill colab-seblak">🌶️ Seblak</span>
+      </div>
+
+      <p class="hero-sub">Satu warung, dua andalan! Pempek kenyal cuko segar<br />
+        dan seblak prasmanan pedas gurih — semua ada di sini!</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-primary">Lihat Menu</a>
+        <a href="https://wa.me/6285124958328?text=Halo%20Mbak%20Wiwin%2C%20saya%20mau%20pesan!" class="btn btn-outline"
+          target="_blank" rel="noopener">
+          📲 Pesan Sekarang
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span>14+</span><small>Tahun Berdiri</small></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span>1000+</span><small>Pelanggan Setia</small></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span>⭐ 4.9</span><small>Rating Google</small></div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll ke bawah</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ===== COLAB SECTION ===== -->
+  <section class="colab-section">
+    <div class="container">
+      <div class="colab-wrap">
+        <div class="colab-block colab-block-pempek">
+          <div class="colab-block-icon">🍢</div>
+          <h3>Tim Pempek</h3>
+          <p>Dibuat dari ikan segar pilihan dengan resep turun-temurun. Disajikan dengan cuko hitam pekat yang Pedas dan
+            Nendang.</p>
+          <ul class="colab-list">
+            <li>✔ Pempek Kapal Selam</li>
+            <li>✔ Pempek Lenjer</li>
+            <li>✔ Model Ikan</li>
+          </ul>
+        </div>
+
+        <div class="colab-vs">
+          <div class="colab-vs-inner">
+            <span>×</span>
+            <p>Colab</p>
+          </div>
+        </div>
+
+        <div class="colab-block colab-block-seblak">
+          <div class="colab-block-icon">🌶️</div>
+          <h3>Tim Seblak</h3>
+          <p>Seblak prasmanan dengan kuah kencur gurih yang menggugah selera. Pilih topping sesukamu — bebas dan puas!
+          </p>
+          <ul class="colab-list">
+            <li>✔ Seblak Prasmanan Bebas Topping</li>
+            <li>✔ Level Pedas Bisa Diatur</li>
+            <li>✔ Kuah Kencur Autentik</li>
+          </ul>
+        </div>
+      </div>
+      <p class="colab-tagline">🍢🌶️ <strong>Pempek + Seblak</strong> — Dua Dunia, Satu Warung, Tak Perlu Pilih!</p>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-visual">
+        <div class="about-img-wrap">
+          <div class="about-img-placeholder">
+            <img src="img/lt.png">
+          </div>
+          <div class="about-badge-float">
+            <span>❤️</span>
+            <p>Dimasak dengan<br />Cinta &amp; Hati</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <span class="section-label">Tentang Kami</span>
+        <h2>Kisah di Balik<br />Semangkuk Pempek</h2>
+        <p>
+          Warung Pempek Memble Mbak Wiwin lahir dari kecintaan mendalam terhadap kuliner khas Palembang.
+          Sejak pertama kali membuka lapak sederhana pada tahun 2012, Mbak Wiwin selalu menggunakan ikan segar pilihan
+          dan resep turun-temurun yang telah teruji lezatnya.
+        </p>
+        <p>
+          Kata <strong>"Memble"</strong> sendiri adalah sebutan sayang dari pelanggan setia yang menggambarkan
+          kelezatan pempek yang tak bisa dilupakan — kenyal di luar, lembut di dalam,
+          dengan cuko yang pekat dan segar. Kini hadir pula <strong>Seblak Prasmanan</strong> sebagai kolaborasi
+          andalan yang langsung jadi favorit baru!
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <span class="hi-icon">🐟</span>
+            <div>
+              <strong>Ikan Segar Pilihan</strong>
+              <small>Langsung dari pasar setiap hari</small>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="hi-icon">🧑‍🍳</span>
+            <div>
+              <strong>Resep Autentik</strong>
+              <small>Warisan nenek moyang Palembang</small>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="hi-icon">🤝</span>
+            <div>
+              <strong>Pelayanan Ramah</strong>
+              <small>Seperti makan di rumah sendiri</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Menu Kami</span>
+        <h2>Hidangan Istimewa<br />Mbak Wiwin</h2>
+        <p>Semua dibuat segar setiap hari dengan bahan-bahan berkualitas</p>
+      </div>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-cat="all">Semua</button>
+        <button class="tab-btn" data-cat="pempek">Pempek</button>
+        <button class="tab-btn" data-cat="seblak">Seblak</button>
+        <button class="tab-btn" data-cat="minuman">Minuman</button>
+        <button class="tab-btn" data-cat="lainnya">Lainnya</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+
+        <!-- COLAB SPECIAL CARD — full width -->
+        <div class="menu-card card-colab menu-card-wide" data-cat="seblak">
+          <div class="colab-emoji-pair">🍢🌶️</div>
+          <div class="menu-info">
+            <div class="colab-label-sm">✨ Special Colab Pick</div>
+            <h3>Combo Pempek × Seblak</h3>
+            <p>Dua legenda dalam satu sajian — pempek kapal selam kenyal dengan cuko khas, dipadukan seblak prasmanan
+              pedas gurih. Dua dunia, satu piring!</p>
+            <div class="menu-footer">
+              <span class="badge-menu badge-colab">🔥 Colab Favorit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PEMPEK -->
+        <div class="menu-card card-pempek" data-cat="pempek">
+          <div class="menu-emoji">🍢</div>
+          <div class="menu-info">
+            <h3>Pempek Kapal Selam</h3>
+            <p>Pempek besar berisi telur ayam utuh, disajikan dengan cuko khas</p>
+            <div class="menu-footer">
+              <span class="price">Rp 5.000</span>
+              <span class="badge-menu">🔥 Best Seller</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card card-pempek" data-cat="pempek">
+          <div class="menu-emoji">🥟</div>
+          <div class="menu-info">
+            <h3>Pempek Lenjer</h3>
+            <p>Pempek berbentuk silinder panjang, kenyal dan gurih</p>
+            <div class="menu-footer">
+              <span class="price">Rp 2.000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card card-pempek" data-cat="pempek">
+          <div class="menu-emoji"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy1YpvPzmgOboY8CYys3nmVTvrroAVzhJamnSIJMGAeQ&s=10"
+              width="60" height="50"></div>
+          <div class="menu-info">
+            <h3>Model Ikan</h3>
+            <p>Pempek model berisi tahu, disajikan dalam kuah bening segar</p>
+            <div class="menu-footer">
+              <span class="price">Rp 5.000</span>
+              <span class="badge-menu">⭐ Favorit</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SEBLAK -->
+        <div class="menu-card card-seblak" data-cat="seblak">
+          <div class="menu-emoji">🌶️</div>
+          <div class="menu-info">
+            <h3>Seblak Prasmanan</h3>
+            <p>Seblak pedas gurih dengan pilihan topping bebas sesuka hati, kuah kencur autentik</p>
+            <div class="menu-footer">
+              <span class="price">Mulai Rp 10.000</span>
+              <span class="badge-menu">🔥 Pedas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MINUMAN -->
+        <div class="menu-card" data-cat="lainnya">
+          <div class="menu-emoji"><img src="https://i.pinimg.com/736x/26/a5/ff/26a5ffd2981d90d363639108e09d1592.jpg"
+              width="50" height="50">
+          </div>
+          <div class="menu-info">
+            <h3>Es Campur</h3>
+            <p>Es campur segar dengan buah-buahan, cincau, dan sirup manis</p>
+            <div class="menu-footer">
+              <span class="price">Rp 5.000</span>
+              <span class="badge-menu">❄️ Segar</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="minuman">
+          <div class="menu-emoji">🥤</div>
+          <div class="menu-info">
+            <h3>JasJus</h3>
+            <p>Miniman Murah Low Budget</p>
+            <div class="menu-footer">
+              <span class="price">Rp 2.000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="minuman">
+          <div class="menu-emoji">🍺</div>
+          <div class="menu-info">
+            <h3>Es Teh</h3>
+            <p>Es Teh manis yang menyegarkan</p>
+            <div class="menu-footer">
+              <span class="price">Rp 4.000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="minuman">
+          <div class="menu-emoji">☕</div>
+          <div class="menu-info">
+            <h3>Kopi</h3>
+            <p>Kopi hitam atau susu, cocok menemani pempek di siang hari</p>
+            <div class="menu-footer">
+              <span class="price">Rp 5.000</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LAINNYA -->
+        <div class="menu-card" data-cat="lainnya">
+          <div class="menu-emoji">⛔</div>
+          <div class="menu-info">
+            <h3>Coming Soon</h3>
+            <p>-------</p>
+            <div class="menu-footer">
+              <span class="price">Rp 0</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GALLERY ===== -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Galeri</span>
+        <h2>Kelezatan yang<br />Berbicara Sendiri</h2>
+        <p>Setiap hidangan dibuat dengan penuh semangat dan cinta</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item gi-large">
+          <div class="gal-placeholder">
+            <span>🍢</span>
+            <p>Pempek Kapal Selam</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gal-placeholder">
+            <span>🍲</span>
+            <p>Model Ikan</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gal-placeholder">
+            <span>🌶️</span>
+            <p>Seblak Prasmanan</p>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <div class="gal-placeholder">
+            <span>🍧</span>
+            <p>Es Campur</p>
+          </div>
+        </div>
+        <div class="gallery-item gi-wide">
+          <div class="gal-placeholder">
+            <span>🏠</span>
+            <p>Suasana Warung</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testi-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Kata Pelanggan</span>
+        <h2>Mereka Sudah<br />Merasakannya!</h2>
+      </div>
+      <div class="testi-grid">
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Pempek kapal selamnya juara! Cuko-nya pas banget, nggak terlalu pedas.
+            Kalau ke sini pasti nambah terus!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">BR</div>
+            <div>
+              <strong>Khabibah Imana.</strong>
+              <small>Pelanggan 14 Tahun</small>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card testi-featured">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Es campurnya beneran seger banget! Cocok banget makan pempek sambil minum
+            es campur di sini. Harganya juga terjangkau, recommended banget!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">ST</div>
+            <div>
+              <strong>Galih I.S</strong>
+              <small>Pelanggan Setia</small>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"Seblak prasmanannya mantap! Bisa pilih topping sendiri, pedasnya
+            bisa diatur juga. Mbak Wiwinnya juga ramah banget!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">AH</div>
+            <div>
+              <strong>Nabilla</strong>
+              <small>Via Google Maps</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OWNER ===== -->
+  <section class="section owner-section" id="owner">
+    <div class="container owner-grid">
+      <div class="owner-text">
+        <span class="section-label">Pemilik Warung</span>
+        <h2>Mbak Wiwin dan Mas Nanang</h2>
+        <p class="owner-tagline">"Memasak adalah cara saya berbagi kebahagiaan"</p>
+        <p>
+          Mbak Wiwin, sosok perempuan tangguh yang telah menggeluti dunia kuliner selama lebih dari 14 tahun.
+          Dengan keahlian memasak yang diasah sejak muda, beliau berhasil menciptakan cita rasa pempek
+          yang khas dan selalu dirindukan pelanggan.
+        </p>
+        <p>
+          Bagi Mbak Wiwin, warung ini bukan sekadar bisnis — ini adalah tempat berbagi kebahagiaan
+          melalui makanan yang dibuat dari hati. Setiap hari beliau hadir langsung untuk memastikan
+          kualitas dan kehangatan pelayanan terjaga.
+        </p>
+        <div class="owner-socials">
+          <a href="https://wa.me/6281234567890" class="social-btn" target="_blank" rel="noopener">
+            📱 WhatsApp
+          </a>
+          <a href="#" class="social-btn social-ig" target="_blank" rel="noopener">
+            📸 Instagram
+          </a>
+        </div>
+      </div>
+      <div class="owner-visual">
+        <div class="owner-img-wrap">
+          <div class="owner-img-placeholder">
+            <span><img src="img/owner.jpeg" alt=""></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INFO + CONTACT ===== -->
+  <section class="section info-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Kunjungi Kami</span>
+        <h2>Lokasi &amp; Kontak</h2>
+      </div>
+      <div class="info-grid">
+
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <h3>Alamat</h3>
+          <p>Jl. Suwarno,<br />
+            Dusun 1, Tugumulyo<br />
+            Kab. Musi Rawas, Sumatera Selatan</p>
+          <a href="https://share.google/yH67xc8HHmLBY3Ldu" class="info-link" target="_blank" rel="noopener">
+            Buka di Google Maps →
+          </a>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">🕐</div>
+          <h3>Jam Buka</h3>
+          <div class="hours-list">
+            <div class="hour-row">
+              <span>Senin – Sabtu</span>
+              <span class="open">13.00 – 22.00</span>
+            </div>
+            <div class="hour-row holiday">
+              <span>Minggu</span>
+              <span class="closed">Tutup</span>
+            </div>
+            <div class="hour-row holiday">
+              <span>Hari Libur Nasional</span>
+              <span class="closed">Tutup</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon">📞</div>
+          <h3>Hubungi Kami</h3>
+          <p>Menerima pemesanan &amp; order pesanan untuk acara melalui WhatsApp!</p>
+          <a href="https://wa.me/6285124958328?text=Halo%20Mbak%20Wiwin%2C%20saya%20ingin%20pesan%20pempek!"
+            class="btn-wa-big" target="_blank" rel="noopener">
+            📲 Chat WhatsApp Sekarang
+          </a>
+          <p class="info-note">📲 +62 0851-2495-8328</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Laper? Yuk Mampir ke<br />Warung Pempek Memble! 🍢🌶️</h2>
+      <p>Order pesanan untuk acara? Hubungi kami langsung via WhatsApp!</p>
+      <a href="https://wa.me/6285124958328?text=Halo%20Mbak%20Wiwin%2C%20saya%20mau%20pesan!" class="btn btn-white"
+        target="_blank" rel="noopener">
+        📲 Pesan via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo">🍢🌶️ Pempek Memble Mbak Wiwin</span>
+        <p>Warung pempek autentik × seblak prasmanan khas Mbak Wiwin, berdiri sejak 2012.</p>
+      </div>
+      <div class="footer-links">
+        <strong>Menu</strong>
+        <a href="#menu">Pempek</a>
+        <a href="#menu">Model Ikan</a>
+        <a href="#menu">Seblak</a>
+        <a href="#menu">Minuman</a>
+      </div>
+      <div class="footer-links">
+        <strong>Halaman</strong>
+        <a href="#about">Tentang Kami</a>
+        <a href="#gallery">Galeri</a>
+        <a href="#contact">Kontak</a>
+        <a href="#owner">Pemilik</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2012 Warung Pempek Memble Mbak Wiwin. Dibuat dengan ❤️ untuk pelanggan setia kami.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
